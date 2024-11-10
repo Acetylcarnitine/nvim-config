@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -13,13 +13,25 @@ return {
     end,
   },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  -- Rust plugins
+  { "simrat39/rust-tools.nvim" },
+  {
+    "Saecki/crates.nvim",
+    lazy = false,
+    config = function()
+      require "configs.rust-crates"
+    end,
+  },
+
+  -- Pywal theme
+  { "AlphaTechnolog/pywal.nvim" },
+
+  -- LaTeX
+  {
+    "lervag/vimtex",
+    lazy = false,
+    init = function()
+      vim.g.vimtex_view_method = "zathura"
+    end,
+  },
 }
