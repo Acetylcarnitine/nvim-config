@@ -6,8 +6,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "palenight",
-  theme_toggle = { "tokyodark", "palenight" },
+  theme = "nightlamp",
+  theme_toggle = { "tokyodark", "decay" },
 
   transparency = true,
 

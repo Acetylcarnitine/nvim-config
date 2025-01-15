@@ -23,9 +23,6 @@ return {
     end,
   },
 
-  -- Pywal theme
-  { "AlphaTechnolog/pywal.nvim" },
-
   -- LaTeX
   {
     "lervag/vimtex",
