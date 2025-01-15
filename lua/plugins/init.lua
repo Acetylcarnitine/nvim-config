@@ -13,6 +13,9 @@ return {
     end,
   },
 
+  -- Github copilot
+  { "github/copilot.vim" },
+
   -- Rust plugins
   { "simrat39/rust-tools.nvim" },
   {
